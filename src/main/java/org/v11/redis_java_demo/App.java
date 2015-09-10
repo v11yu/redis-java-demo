@@ -38,7 +38,9 @@ public class App {
 		// Get the stored data and print it
 		Set<String> keys = jedis.keys("*");
 		for (String key : keys) {
-			System.out.println("List of stored keys:: " + key);
+			String type = jedis.type(key);
+			if(type.equals("string")) 
+				System.out.println("List of stored keys:: " + key +" "+jedis.get(key));
 		}
 	}
 }

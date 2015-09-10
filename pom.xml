@@ -30,14 +30,7 @@
 	</properties>
 
 	<dependencies>
-		<!-- Start: Test -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<!-- End: Test -->
+		
 		<!-- Start: redis -->
 		<dependency>
 			<groupId>redis.clients</groupId>
